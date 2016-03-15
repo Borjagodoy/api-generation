@@ -1,10 +1,10 @@
 [
-    {"nombre":"usuario", 
-     "atributos":["nombre","apellido","Pais"],
+    {"nombre":"user", 
+     "atributos":["name","apellido","Pais"],
      "tipos":["string","string","string"]
     },
-    {"nombre":"Grupo", 
-     "atributos":["nombre","rol","leader"],
+    {"nombre":"Group", 
+     "atributos":["name","rol","leader"],
      "tipos":["string","string","string"]
     }
 ]
