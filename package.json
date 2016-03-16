@@ -1,10 +1,12 @@
 {
-  "name": "Api REST generation by models",
+  "name": "Api-REST-generation-by-models",
   "version": "0.0.1",
   "description": "Api REST generation by models",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint -f './node_modules/eslint-friendly-formatter' lib",
+    "pretest": "npm run lint"
   },
   "dependencies": {
       "mongoose": "*",
@@ -13,6 +15,13 @@
       "method-override": "*",
       "fs":"*",
       "mkdirp":"*"
+  },
+  "devDependencies": {
+    "eslint": "^2.2.0",
+    "eslint-friendly-formatter": "^1.2.2",
+    "eslint-plugin-filenames": "^0.2.0",
+    "eslint-plugin-promise": "^1.0.8",
+    "eslint-plugin-smells": "^1.0.1"
   },
   "author": "Borja Godoy Gago",
   "license": "BSD-2-Clause"
