@@ -3,8 +3,7 @@ var mongoose = require('mongoose');
 
 var bodyParser= require('body-parser');
 var methodOverride= require('method-override');
-var generateApis= require('APITemplate');
-var route = require('./route.js');
+var generateApis= require('api-generation');
 
 var app= express();
 
@@ -22,6 +21,8 @@ app.use(bodyParser.urlencoded());
 app.use(methodOverride());
 
 generateApis(app);
+var route = require('./route.js');
+
 route(app);
 
 app.listen(3000);
