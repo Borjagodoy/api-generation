@@ -11,7 +11,7 @@
 This project, generate the backend Full API REST depending to models describe you in the config gile API_config.json
 This file is a json list of object wich contain three atributes, name of model, atributtes list of model and type list of the atributes. Each object is defined by the following code.
 ```json
-{"name":"usuario", 
+{"name":"user", 
  "atributtes":["name","LastName","Country"],
  "type":["string","string","string"]
 }
@@ -23,8 +23,7 @@ var mongoose = require('mongoose');
 
 var bodyParser= require('body-parser');
 var methodOverride= require('method-override');
-var generateApis= require('APITemplate');
-var route = require('./route.js');
+var generateApis= require('api-generation');
 
 var app= express();
 
@@ -42,6 +41,8 @@ app.use(bodyParser.urlencoded());
 app.use(methodOverride());
 
 generateApis(app); //new line
+
+var route = require('./route.js');
 route(app);       //new line
 
 app.listen(3000);
