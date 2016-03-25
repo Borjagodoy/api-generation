@@ -1,11 +1,6 @@
 
 # API generation
 
-# Install
- 1. Download the project.
- 2. Add the folder into node_modules in your project(provisional until publication in npm).
- 3. import with your project requires and follow the detailed sample code below.
-
 #The project
 
 This project, generate the backend Full API REST depending to models describe you in the config gile API_config.json
@@ -52,5 +47,9 @@ The rest were longer necessary to use express.
 This helps us to end the repetitive task of creating controllers for each model that we needed the apis and the module generate the all code for the API's of the models declared you in the file confing API_config.json
 the rest were longer necessary to use express.
 
+# Install
+ 1. Download the project.
+ 2. Add api-generatio to package.json.
+ 3. Create the config file API_config.json and write yours models.
 
   [MIT](LICENSE)
